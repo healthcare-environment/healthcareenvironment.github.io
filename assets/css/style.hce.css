@@ -2182,7 +2182,8 @@ legend {
 .navbar {
     background-color: #00255A;
     border: 0;
-    border-radius: 0
+    border-radius: 0;
+    min-width: 800px;
 }
 
 .navbar .navbar-brand {

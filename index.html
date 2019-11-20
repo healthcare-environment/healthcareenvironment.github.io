@@ -15,7 +15,7 @@
     <!--[if lt IE 9]>
         <script src="assets/js/html5shiv.min.js"></script>
         <script src="assets/js/respond.min.js"></script>
-    <![endif]-->
+    <![endif]-->    
   </head>
   <body>
     <div class="ms-site-container ms-nav-fixed">
@@ -460,29 +460,28 @@
                       <form id="formContact" class="form-horizontal">
                         <fieldset class="container">
                           <div class="form-group row">
-                            <label for="inputName" autocomplete="false" class="col-lg-2 control-label">Name</label>
-                            <div class="col-lg-9">
-                              <input type="text" class="form-control" id="inputName" placeholder="Name"> </div>
+                            <label for="firstname" autocomplete="false" class="col-lg-2 control-label">Name</label>
+                            <div class="col-lg-4">
+                              <input type="text" class="form-control" id="firstname" placeholder="First Name">
+                            </div>
+                            <div class="col-lg-5">
+                              <input type="text" class="form-control" id="lastname" placeholder="Last Name/Surname">
+                            </div>
                           </div>
                           <div class="form-group row">
-                            <label for="inputOrganization" autocomplete="false" class="col-lg-2 control-label">Organization</label>
+                            <label for="company" autocomplete="false" class="col-lg-2 control-label">Organization</label>
                             <div class="col-lg-9">
-                              <input type="text" class="form-control" id="inputOrganization" placeholder="Organization"> </div>
+                              <input type="text" class="form-control" id="company" placeholder="Organization"> </div>
                           </div>
                           <div class="form-group row">
-                            <label for="inputEmail" autocomplete="false" class="col-lg-2 control-label">Email</label>
+                            <label for="email" autocomplete="false" class="col-lg-2 control-label">Email</label>
                             <div class="col-lg-9">
-                              <input type="email" class="form-control" id="inputEmail" placeholder="Business Email"> </div>
+                              <input type="email" class="form-control" id="email" placeholder="Business Email"> </div>
                           </div>
                           <div class="form-group row">
-                            <label for="inputSubject" autocomplete="false" class="col-lg-2 control-label">Subject</label>
+                            <label for="message" class="col-lg-2 control-label">Message</label>
                             <div class="col-lg-9">
-                              <input type="text" class="form-control" id="inputSubject" placeholder="Subject"> </div>
-                          </div>
-                          <div class="form-group row">
-                            <label for="inputMessage" class="col-lg-2 control-label">Message</label>
-                            <div class="col-lg-9">
-                              <textarea class="form-control" rows="3" id="inputMessage" placeholder="Your message..."></textarea>
+                              <textarea class="form-control" rows="3" id="message" placeholder="Your message..."></textarea>
                             </div>
                           </div>
                           <div class="form-group row justify-content-end">
@@ -504,7 +503,16 @@
         </section>
         <footer class="ms-footer">
           <div class="container">
-            <p>Copyright &copy; Healthcare Environment 2019</p>
+            <div class="row">
+              <div class="col-md-6">
+                <p>Copyright &copy; Healthcare Environment 2019</p>
+              </div>
+              <div class="col-md-6">
+                <a href="https://hcesurvey2.com/SurveysApp/bin/wc.dll?hesprocess~UtilitiesLogin" target="_blank">
+                  HEDDS Login
+                </a>
+              </div>
+            </div>
           </div>
         </footer>
         <div class="btn-back-top">
@@ -513,8 +521,9 @@
           </a>
         </div>
     </div>
-    <script src="assets/js/plugins.min.js"></script>
-    <script src="assets/js/app.js"></script>
-    <script src="assets/js/lead.js"></script>
+    <script type="text/javascript" async src="assets/js/plugins.min.js"></script>
+    <script type="text/javascript" async src="assets/js/app.js"></script>
+    <script type="text/javascript" async src="assets/js/lead.js"></script>
+    <!--<script id="hs-script-loader" async defer src="//js.hs-scripts.com/6166613.js"></script>-->
   </body>
 </html>

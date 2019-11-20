@@ -172,3 +172,9 @@ function slidebar() {
     $('.input-number input').val( parseInt($('.input-number input').val(), 10) + 1);
   });
 })(jQuery);
+
+
+function saveFormInput()
+{
+    
+}
