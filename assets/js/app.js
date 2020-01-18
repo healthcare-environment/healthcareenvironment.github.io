@@ -174,8 +174,9 @@ function slidebar() {
 })(jQuery);
 
 
-function submitFormToHubSpot(evt)
-{
+function submitFormToHubSpot(form)
+{  
+    this.preventDefault();
     /*d47cfea0-1bc7-4de1-b2cd-68a12bc37a47*/
 
     var xhr = new XMLHttpRequest();
