@@ -22,8 +22,8 @@
       <nav class="navbar navbar-expand-md navbar-fixed ms-lead-navbar navbar-mode navbar-mode mb-0" id="navbar-lead">
         <div class="container container-full">
           <div class="navbar-header">
-            <a class="navbar-brand" href="index.html">
-              <img src="assets/img/hce-logo.png" width="200px" alt="">
+            <a class="navbar-brand" href="about-our-logo.html">
+              <img src="assets/img/hce-logo.png" width="200px" alt="About our logo">
             </a>
           </div>
           <div id="navbar" class="navbar-collapse collapse">
@@ -32,13 +32,10 @@
                 <a data-scroll class="nav-link active" href="#home">Home</a>
               </li>
               <li class="nav-item">
-                <a data-scroll class="nav-link" href="#trueanalytics">True<br>Analytics</a>
+                <a data-scroll class="nav-link" href="#analyticsoutcomes">Analytics&nbsp;&amp;<br>Outcomes</a>
               </li>
               <li class="nav-item">
-                <a data-scroll class="nav-link" href="#intentional">Intentional<br>Outcomes</a>
-              </li>
-              <li class="nav-item">
-                <a data-scroll class="nav-link" href="#triadpartnerships">Triad<br>Partnerships</a>
+                <a data-scroll class="nav-link" href="#triadicpartnerships">Triadic<br>Partnerships</a>
               </li>
               <li class="nav-item">
                 <a data-scroll class="nav-link" href="#globalresearch">Global<br>Research</a>
@@ -49,18 +46,21 @@
               <li class="nav-item">
                 <a data-scroll class="nav-link" href="#contact">Contact</a>
               </li>
+              <li class="nav-item">
+                <a data-scroll class="nav-link" href="https://hcesurvey2.com/SurveysApp/bin/wc.dll?hesprocess~UtilitiesLogin" target="_blank">Sign in</a>
+              </li>
             </ul>
           </div>
         </div>
         <!-- container -->
       </nav>
-      <div class="ms-hero-page ms-hero-img-city2 ms-hero-bg-info color-white" id="home">
+      <div class="ms-hero-page ms-hero-img-home ms-hero-bg-info color-white" id="home">
         <div class="intro-fixed-content index-1">
-          <div class="container">
-            <div class="text-center mb-6 mt-6"><br><br><br>
-              <h1 class="no-m ms-site-title color-white center-block ms-site-title-lg mt-4 animated fadeInDown animation-delay-2">Improve Every Outcome</h1>
-              <p class="lead lead-lg color-white text-center center-block mt-2 mb-4 mw-800 fw-300 animated fadeInUp animation-delay-3">Discover how we improve
-                healthcare outcomes using <span class="color-warning">advanced analytics</span>.</p>
+          <div class="container ">
+            <div class="text-center">
+              <h1 class="no-m ms-site-title color-white center-block ms-site-title-lg animated fadeInDown animation-delay-2">Improve Every Outcome</h1>
+              <p class="lead lead-lg color-white text-center center-block mt-2 mb-4 mw-1000 fw-300 animated fadeInUp animation-delay-3">Discover how we improve
+                healthcare outcomes<br>using <span class="color-warning">advanced analytics</span>.</p>
             </div>
           </div>
         </div>
@@ -71,7 +71,7 @@
         </a>
       </div>
       <!-- class="bg-light index-1 intro-fixed-next"-->>
-        <section id="trueanalytics" class="mt-4">
+        <section id="analyticsoutcomes" class="mt-4">
           <div class="container">
             <h2 class="text-center color-primary mt-4 mb-2">Our proven approach delivers results.</h2>
             <p class="lead text-center ml-10p mr-10p center-block mb-4">We are experts in using
@@ -385,7 +385,7 @@
                 </div>
                 </div>
               <div class="text-center mb-4">
-                <a href="javascript:void()" class="btn btn-success btn-raised">Contact us to schedule a consultation</a>
+                <a data-scroll href="#contact" class="btn btn-success btn-raised">Contact us to schedule a consultation</a>
               </div>
             </div>
             <!--container -->
@@ -457,10 +457,10 @@
                 <div class="col-lg-8">
                   <div class="card card-primary">
                     <div class="card-body">
-                      <form id="formContact" class="form-horizontal">
+                      <form id="formContact" class="form-horizontal" onsubmit="submitFormToHubSpot(this)">
                         <fieldset class="container">
                           <div class="form-group row">
-                            <label for="firstname" autocomplete="false" class="col-lg-2 control-label">Name</label>
+                            <label for="firstname" autocomplete="false" class="col-lg-3 control-label">Name</label>
                             <div class="col-lg-4">
                               <input type="text" class="form-control" id="firstname" placeholder="First Name">
                             </div>
@@ -469,23 +469,23 @@
                             </div>
                           </div>
                           <div class="form-group row">
-                            <label for="company" autocomplete="false" class="col-lg-2 control-label">Organization</label>
+                            <label for="company" autocomplete="false" class="col-lg-3 control-label">Organization</label>
                             <div class="col-lg-9">
                               <input type="text" class="form-control" id="company" placeholder="Organization"> </div>
                           </div>
                           <div class="form-group row">
-                            <label for="email" autocomplete="false" class="col-lg-2 control-label">Email</label>
+                            <label for="email" autocomplete="false" class="col-lg-3 control-label">Email</label>
                             <div class="col-lg-9">
                               <input type="email" class="form-control" id="email" placeholder="Business Email"> </div>
                           </div>
                           <div class="form-group row">
-                            <label for="message" class="col-lg-2 control-label">Message</label>
+                            <label for="message" class="col-lg-3 control-label">Message</label>
                             <div class="col-lg-9">
                               <textarea class="form-control" rows="3" id="message" placeholder="Your message..."></textarea>
                             </div>
                           </div>
                           <div class="form-group row justify-content-end">
-                            <div class="col-lg-10">
+                            <div class="col-lg-12">
                               <button type="submit" class="btn btn-raised btn-success">Submit</button>
                               <button type="button" class="btn btn-warning">Cancel</button>
                             </div>
