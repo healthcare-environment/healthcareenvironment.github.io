@@ -14664,8 +14664,8 @@ a.img-thumbnail:focus {
     background-repeat: no-repeat
 }
 
-.ms-hero-img-data {
-    background-image: url(../img/hexagon-pattern-data-4414x1700.jpg);
+.ms-hero-img-adaptive-technology {
+    background-image: url(../img/hero-adaptive-technology.jpg);
     background-size: cover;
     background-position: top center;
     background-repeat: no-repeat
@@ -14673,6 +14673,20 @@ a.img-thumbnail:focus {
 
 .ms-hero-img-home {
     background-image: url(../img/home.jpg);
+    background-size: cover;
+    background-position: top center;
+    background-repeat: no-repeat
+}
+
+.ms-hero-img-job-satisfaction {
+    background-image: url(../img/hero-job-satisfaction-1.jpg);
+    background-size: cover;
+    background-position: top center;
+    background-repeat: no-repeat
+}
+
+.ms-hero-img-quality-of-care {
+    background-image: url(../img/hero-quality-of-care.jpg);
     background-size: cover;
     background-position: top center;
     background-repeat: no-repeat
@@ -14724,6 +14738,46 @@ a.img-thumbnail:focus {
     width: 100%;
     height: 100%;
     background-color: rgba(181, 181, 181, 0.55);
+    z-index: 0
+}
+
+.image-adaptive-technology-1 {
+    background-image: url(../img/adaptive-technology-1.jpg);
+    background-size: cover;
+    background-position: top center;
+    background-repeat: no-repeat
+}
+
+.image-adaptive-technology-1:after {
+    display: block;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0
+}
+
+.image-adaptive-technology-3 {
+    background-image: url(../img/adaptive-technology-3.jpg);
+    background-size: cover;
+    background-position: top center;
+    background-repeat: no-repeat
+}
+
+.image-adaptive-technology-3:after {
+    display: block;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
     z-index: 0
 }
 
