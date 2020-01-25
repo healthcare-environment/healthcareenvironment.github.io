@@ -37,10 +37,10 @@ handler.apply(window, [" On"]),
         .stop()
         .animate({ scrollTop: o.offset().top }, 1e3);
     }),
-      $("body").scrollspy({ target: "#navbar-lead", offset: 200 }),
-      $('[data-spy="scroll"]').each(function() {
-        $(this).scrollspy("refresh");
-      }),
+//      $("body").scrollspy({ target: "#navbar-lead", offset: 200 }),
+//      $('[data-spy="scroll"]').each(function() {
+//        $(this).scrollspy("refresh");
+//      }),
       setTimeout(function() {
         introFull();
       }, 200);

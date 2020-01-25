@@ -14735,6 +14735,22 @@ a.img-thumbnail:focus {
 }
 
 
+.image-context-analytics {
+    background-image: url(../img/contextual-analytics.png);
+    background-size: cover;
+    background-position: top center;
+    background-repeat: no-repeat
+}
+
+
+.image-improve-outcome {
+    background-image: url(../img/improve-every-outcome.png);
+    background-size: cover;
+    background-position: top center;
+    background-repeat: no-repeat
+}
+
+
 .ms-bg-fixed {
     background-attachment: fixed
 }
