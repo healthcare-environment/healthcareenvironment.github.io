@@ -14614,14 +14614,22 @@ a.img-thumbnail:focus {
     background-position: center center
 }
 
-.ms-hero-img-coffee {
-    background-image: url(../img/coffee.jpg);
+.ms-hero-img-contact-us {
+    background-image: url(../img/contact-us.jpg);
     background-size: cover;
-    background-position: center center
+    background-position: center center;
+    background-repeat: no-repeat
 }
 
-.ms-hero-img-meeting {
-    background-image: url(../img/meeting.jpg);
+.ms-hero-img-intentional-outcomes {
+    background-image: url(../img/intentional-outcomes.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat
+}
+
+.ms-hero-img-global-research {
+    background-image: url(../img/global-research.jpg);
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat
@@ -14664,6 +14672,13 @@ a.img-thumbnail:focus {
 
 .ms-hero-img-hightech {
     background-image: url(../img/hero-hands-interacting-with-hightech-screen-5880x1795.jpg);
+    background-size: cover;
+    background-position: top center;
+    background-repeat: no-repeat
+}
+
+.ms-hero-img-science-for-decisions {
+    background-image: url(../img/hero-science-for-decisions.jpg);
     background-size: cover;
     background-position: top center;
     background-repeat: no-repeat
@@ -14725,137 +14740,63 @@ a.img-thumbnail:focus {
     background-repeat: no-repeat
 }
 
-.image-data-noise {
-    background-image: url(../img/data-noise.jpg);
+.image-row {
     background-size: cover;
     background-position: top center;
     background-repeat: no-repeat
 }
 
-.image-data-noise:after {
-    display: block;
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(181, 181, 181, 0.55);
-    z-index: 0
+.image-science-for-decisions-1 {
+    background-image: url(../img/science-for-decisions-1.jpg);
 }
 
+.image-science-for-decisions-2 {
+    background-image: url(../img/science-for-decisions-2.png);
+    height: 355px
+}
+
+.image-science-for-decisions-3 {
+    background-image: url(../img/science-for-decisions-3.jpg);
+}
 
 .image-job-satisfaction-1 {
     background-image: url(../img/job-satisfaction-1.png);
-    background-size: cover;
-    background-position: top center;
-    background-repeat: no-repeat;
     height: 250px
 }
 
 .image-job-satisfaction-2 {
     background-image: url(../img/job-satisfaction-2.jpg);
-    background-size: cover;
-    background-position: bottom center;
-    background-repeat: no-repeat;
     height: 300px
 
 }
 
 .image-job-satisfaction-3 {
     background-image: url(../img/job-satisfaction-3.png);
-    background-size: cover;
-    background-position: top center;
-    background-repeat: no-repeat;
     height: 260px;
     border: 1px solid #e5e5e5
 }
 
 .image-adaptive-technology-1 {
     background-image: url(../img/adaptive-technology-1.jpg);
-    background-size: cover;
-    background-position: top center;
-    background-repeat: no-repeat
-}
-
-.image-adaptive-technology-1:after {
-    display: block;
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 0
 }
 
 .image-adaptive-technology-2 {
     background-image: url(../img/adaptive-technology-2.jpg);
-    background-size: cover;
-    background-position: top center;
-    background-repeat: no-repeat
-}
-
-.image-adaptive-technology-2:after {
-    display: block;
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 0
 }
 
 
 .image-adaptive-technology-3 {
     background-image: url(../img/adaptive-technology-3.jpg);
-    background-size: cover;
-    background-position: top center;
-    background-repeat: no-repeat
 }
-
-.image-adaptive-technology-3:after {
-    display: block;
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 0
-}
-
-.image-informed-decisions {
-    background-image: url(../img/informed-decisions-800x344.jpg);
-    background-size: cover;
-    background-position: top center;
-    background-repeat: no-repeat
-}
-
 
 .image-quality-of-care-1 {
     background-image: url(../img/quality-of-care-1.png);
-    background-size: cover;
-    background-position: top center;
-    background-repeat: no-repeat;
     height: 380px;
     border: 1px solid #e5e5e5
 }
 
 .image-quality-of-care-2 {
     background-image: url(../img/quality-of-care-2.png);
-    background-size: cover;
-    background-position: top center;
-    background-repeat: no-repeat;
     height: 265px;
     border: 1px solid #e5e5e5
 }
