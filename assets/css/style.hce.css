@@ -5221,14 +5221,19 @@ a.hover-light:focus {
 }
 
 h1,
-h2,
+h2 {
+    margin: 20px 0 15px;
+    margin: 2rem 0 1.5rem
+}
+
 h3,
 h4,
 h5,
 h6 {
-    margin: 20px 0 15px;
-    margin: 2rem 0 1.5rem
+    margin: 0 0 15px;
+    margin: 0 0 1.5rem
 }
+
 
 h6,
 h5 {
@@ -14679,7 +14684,7 @@ a.img-thumbnail:focus {
 }
 
 .ms-hero-img-job-satisfaction {
-    background-image: url(../img/hero-job-satisfaction-1.jpg);
+    background-image: url(../img/hero-job-satisfaction.png);
     background-size: cover;
     background-position: top center;
     background-repeat: no-repeat
@@ -14741,6 +14746,46 @@ a.img-thumbnail:focus {
     z-index: 0
 }
 
+
+.image-job-satisfaction-1 {
+    background-image: url(../img/job-satisfaction-1.png);
+    background-size: cover;
+    background-position: top center;
+    background-repeat: no-repeat;
+    height: 250px
+}
+
+.image-job-satisfaction-1:after {
+    display: block;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0
+}
+
+.image-job-satisfaction-2 {
+    background-image: url(../img/job-satisfaction-2.jpg);
+    background-size: cover;
+    background-position: bottom center;
+    background-repeat: no-repeat;
+    height: 300px
+
+}
+
+.image-job-satisfaction-3 {
+    background-image: url(../img/quality-of-care-2.png);
+    background-size: cover;
+    background-position: top center;
+    background-repeat: no-repeat;
+    height: 270px;
+    border: 1px solid #e5e5e5
+}
+
 .image-adaptive-technology-1 {
     background-image: url(../img/adaptive-technology-1.jpg);
     background-size: cover;
@@ -14760,6 +14805,27 @@ a.img-thumbnail:focus {
     height: 100%;
     z-index: 0
 }
+
+.image-adaptive-technology-2 {
+    background-image: url(../img/adaptive-technology-2.jpg);
+    background-size: cover;
+    background-position: top center;
+    background-repeat: no-repeat
+}
+
+.image-adaptive-technology-2:after {
+    display: block;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0
+}
+
 
 .image-adaptive-technology-3 {
     background-image: url(../img/adaptive-technology-3.jpg);
@@ -14789,13 +14855,23 @@ a.img-thumbnail:focus {
 }
 
 
-.image-context-analytics {
-    background-image: url(../img/contextual-analytics.png);
+.image-quality-of-care-1 {
+    background-image: url(../img/quality-of-care-1.png);
     background-size: cover;
     background-position: top center;
-    background-repeat: no-repeat
+    background-repeat: no-repeat;
+    height: 380px;
+    border: 1px solid #e5e5e5
 }
 
+.image-quality-of-care-2 {
+    background-image: url(../img/quality-of-care-2.png);
+    background-size: cover;
+    background-position: top center;
+    background-repeat: no-repeat;
+    height: 265px;
+    border: 1px solid #e5e5e5
+}
 
 .image-improve-outcome {
     background-image: url(../img/improve-every-outcome.png);
