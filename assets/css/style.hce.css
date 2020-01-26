@@ -14755,19 +14755,6 @@ a.img-thumbnail:focus {
     height: 250px
 }
 
-.image-job-satisfaction-1:after {
-    display: block;
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 0
-}
-
 .image-job-satisfaction-2 {
     background-image: url(../img/job-satisfaction-2.jpg);
     background-size: cover;
@@ -14778,11 +14765,11 @@ a.img-thumbnail:focus {
 }
 
 .image-job-satisfaction-3 {
-    background-image: url(../img/quality-of-care-2.png);
+    background-image: url(../img/job-satisfaction-3.png);
     background-size: cover;
     background-position: top center;
     background-repeat: no-repeat;
-    height: 270px;
+    height: 260px;
     border: 1px solid #e5e5e5
 }
 
