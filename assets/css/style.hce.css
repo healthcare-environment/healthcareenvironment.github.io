@@ -1482,10 +1482,10 @@ output {
 }
 
 .form-control {
-    height: 38px;
+    height: 30px;
     padding: 7px 0;
     font-size: 16px;
-    line-height: 1.42857
+    line-height: 1.25
 }
 
 @media screen and (-webkit-min-device-pixel-ratio:0) {
@@ -1905,7 +1905,7 @@ label.control-label {
 
 .form-group {
     padding-bottom: 7px;
-    margin: 28px 0 0
+    margin: 20px 0 0
 }
 
 .form-group .form-control {
@@ -1943,10 +1943,10 @@ label.control-label {
 }
 
 .form-group label.control-label {
-    font-size: 12px;
+    font-size: 14px;
     line-height: 1.07143;
     font-weight: 400;
-    margin: 16px 0 0
+    margin: 8px 0 0
 }
 
 .form-group .help-block {
@@ -2174,6 +2174,15 @@ select.form-control[multiple],
     height: 100%;
     z-index: 100
 }
+
+.hide {
+    display: none
+}
+
+.show {
+    display: block
+}
+
 
 legend {
     border-bottom: 0
@@ -4608,7 +4617,8 @@ hr.on-light {
 
 .text-small {
     font-size: 12px;
-    font-size: 1.2rem
+    font-size: 1.2rem;
+    line-height: 18px;
 }
 
 .text-bigger {
@@ -14443,39 +14453,10 @@ a.img-thumbnail:focus {
 }
 
 .wrap {
-    padding: 60px 0;
-    padding: 6rem 0
-}
-
-.wrap.wrap-mountain {
-    background-color: #424242;
-    color: #fafafa;
-    background-image: url(../img/back_mountain.jpg);
-    background-position: center center;
-    background-size: cover;
-    position: relative;
-    animation: moveBack;
-    animation-duration: 30s;
-    animation-timing-function: linear;
-    animation-iteration-count: infinite
-}
-
-.wrap.wrap-mountain:after {
-    display: block;
-    content: "";
-    position: absolute;
-    z-index: 0;
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    width: 100%;
-    background-color: rgba(7, 73, 126, .8)
-}
-
-.wrap.wrap-mountain .container {
-    position: relative;
-    z-index: 1
+    padding-top: 90px;
+    padding-top: 7rem;
+    padding-bottom: 40px;
+    padding-bottom: 4rem;
 }
 
 .wrap.wrap-danger {

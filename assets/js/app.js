@@ -27,26 +27,26 @@ $(document).ready(function() {
   //new SmoothScroll("[data-scroll]");
   //$('[data-toggle="tooltip"]').tooltip(),
   //$('[data-toggle="popover"]').popover(),
-    //$("#status").fadeOut(),
-    //$("#ms-preload")
-    //  .delay(350)
-    //  .fadeOut("slow"),
-    //$("body")
-    //  .delay(350)
-    //  .css({ overflow: "visible" }),
-    //new WOW().init();
+  //$("#status").fadeOut(),
+  //$("#ms-preload")
+  //  .delay(350)
+  //  .fadeOut("slow"),
+  //$("body")
+  //  .delay(350)
+  //  .css({ overflow: "visible" }),
+  //new WOW().init();
   //Array.from(document.querySelectorAll(".js-player")).map(function(t) {
   //  return new Plyr(t);
   //});
   //$(".counter").counterUp({ delay: 10, time: 2e3 }), slidebar();
   //$(".ms-slider").slider();
   $(".nav-link").click(function(evt) {
-      $(".nav-link").removeClass("active");
-      $(this).addClass("active");
+    $(".nav-link").removeClass("active");
+    $(this).addClass("active");
     //$("ul li").addClass(function(index) {
     //  return "item-" + index;
     //});
-    });
+  });
 
   var t,
     o = $(".btn-back-top");
@@ -111,16 +111,16 @@ $(document).ready(function() {
         e.removeClass("bd-scroll"),
         n.removeClass("fixed-top")));
   });
-//,
-//    $("#datePicker").datepicker({
-//      orientation: "bottom left",
-//      autoclose: !0,
-//      todayHighlight: !0
-//    });
-//  var a = $(".masonry-container");
-//  a.imagesLoaded(function() {
-//    a.masonry({ columnWidth: ".masonry-item", itemSelector: ".masonry-item" });
-//  });
+  //,
+  //    $("#datePicker").datepicker({
+  //      orientation: "bottom left",
+  //      autoclose: !0,
+  //      todayHighlight: !0
+  //    });
+  //  var a = $(".masonry-container");
+  //  a.imagesLoaded(function() {
+  //    a.masonry({ columnWidth: ".masonry-item", itemSelector: ".masonry-item" });
+  //  });
   var s = !1;
   $(".ms-conf-btn").click(function() {
     s ? ((s = !1), closeConf()) : ((s = !0), openConf());
@@ -665,11 +665,112 @@ handler.apply(window, [" On"]),
     setTimeout(tabs, 700);
   });
 
+function isEmailValid(input) {
+    var regex = /^[\w-]+(\.[\w-]+)*@([a-z0-9-]+(\.[a-z0-9-]+)*?\.[a-z]{2,6}|(\d{1,3}\.){3}\d{1,3})(:\d{4})?$/;
+    return regex.test(input);
+}
 
-function submitFormToHubSpot(form)
-{  
-    this.preventDefault();
-    /*d47cfea0-1bc7-4de1-b2cd-68a12bc37a47*/
+function submitFormToHubSpot(form) {
+  //form.preventDefault();
+  /*d47cfea0-1bc7-4de1-b2cd-68a12bc37a47*/
+  var epoch = Date.now();
+  var fname = $("#firstname")
+    .val()
+    .trim();
+
+  var lname = $("#lastname")
+    .val()
+    .trim();
+
+  var email = $("#email")
+    .val()
+    .trim();
+
+  var company = $("#company")
+    .val()
+    .trim();
+
+  var message = $("#message")
+    .val()
+    .trim();
+
+  var msg = "Please";
+
+  if (!fname && !lname) msg += " enter your first and last names";
+  else if (!fname) msg += " enter your first name";
+  else if (!lname) msg += " enter your last name";
+
+  if (!email || !isEmailValid(email))
+    msg +=
+      msg.length === 6
+        ? " enter a valid email address"
+        : " and a valid email address";
+
+
+  if (msg.length > 6) {
+    $("#instruct").show().text(msg + ".").addClass("text-center color-success");
+  }
+  else {
+
+    $("#instruct").text("").hide();
+
+    var settings = {
+      url:
+        "https://api.hsforms.com/submissions/v3/integration/submit/6166613/4072f3c9-130a-4281-8b4f-3c85ab3e1a88?hapikey=d47cfea0-1bc7-4de1-b2cd-68a12bc37a47",
+      method: "POST",
+      timeout: 0,
+      headers: {
+        "Content-Type": "application/json"
+      },
+      data: JSON.stringify({
+        submittedAt: epoch,
+        fields: [
+          { name: "email", value: email },
+          { name: "firstname", value: fname },
+          { name: "lastname", value: lname },
+          { name: "company", value: company },
+          { name: "message", value: message }
+        ],
+        legalConsentOptions: {
+          consent: {
+            consentToProcess: true,
+            text:
+              "I agree to allow Healthcare Environment to store and process my personal data.",
+            communications: [
+              {
+                value: true,
+                subscriptionTypeId: 999,
+                text:
+                  "I agree to receive marketing communications from Healthcare Environment."
+              }
+            ]
+          }
+        }
+      })
+    };
+
+    $.ajax(settings).done(function(response) {
+      console.log(response);
+        $("#firstname").val("");
+        $("#lastname").val("");
+        $("#email").val("");
+        $("#company").val("");
+        $("#message").val("");
+        $("#formContact").hide();
+        $("#response")
+            .show()
+            .text(
+            "We appreciate your request and will follow up with you promptly."
+            )
+            .addClass("text-center color-primary");
+    });
+  }
+}
+
+
+/*
+
+
 
     var xhr = new XMLHttpRequest();
     var url =
@@ -682,7 +783,7 @@ function submitFormToHubSpot(form)
       fields: [
         {
           name: "email",
-          value: "chrisandrew@outlook.com"
+          value: $("#firstname").value
         },
         {
           name: "Chris",
@@ -731,3 +832,4 @@ function submitFormToHubSpot(form)
     xhr.send(final_data);    
 
 }
+*/
