@@ -1,4 +1,4 @@
-@import"https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700|Indie+Flower";
+﻿@import"https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700|Indie+Flower";
 @charset "UTF-8";
 
 .withripple {
@@ -14704,27 +14704,32 @@ a.img-thumbnail:focus {
     background-image: url(../img/white-concrete-spiral-stairway-955733.jpg);
     background-size: cover;
     background-position: top center;
-    background-repeat: no-repeat
+    background-repeat: no-repeat;
+    min-height:200px
+
 }
 
 .image-human-eye {
     background-image: url(../img/human-eye-700x262.jpg);
     background-size: contain;
     background-position: top left;
-    background-repeat: no-repeat
+    background-repeat: no-repeat;
+    min-height: 200px
 }
 
 .image-conch-shell {
     background-image: url(../img/conch-shell-400x267.jpg);
     background-size: contain;
     background-position: top center;
-    background-repeat: no-repeat
+    background-repeat: no-repeat;
+    min-height: 200px
 }
 
 .image-row {
     background-size: cover;
     background-position: top center;
-    background-repeat: no-repeat
+    background-repeat: no-repeat;
+    min-height: 200px
 }
 
 .image-science-for-decisions-1 {
