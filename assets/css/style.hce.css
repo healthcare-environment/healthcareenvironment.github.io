@@ -18956,8 +18956,8 @@ body.lb-disable-scrolling {
 .resource_box h2 {color: #00255A; text-align: left; font-weight: 400;}
 .resource_box .article_box{display: inline-block; width: 100%; padding-bottom: 20px; margin-bottom: 20px; border-bottom: 1px solid #c6c6c6;}
 .resource_box .article_box img{float: left; margin: 0px 20px 10px 0px;}
-.resource_box .article_box h5{margin-bottom: 10px;}
-.resource_box .article_box h2{color: #2c4b99; margin: 0px; font-weight: 400; margin-bottom: 10px;}
+.resource_box .article_box h5{margin-bottom: 10px; display: none;}
+.resource_box .article_box h2{color: #2c4b99; margin: 0px; font-weight: 400; margin-bottom: 10px; font-size: 20px;}
 .resource_box .article_box p{margin: 10px 0px;}
 
 .view_hedss, .mob_hedss{padding: 6px 12px; background:#2c4b99; font-size: 14px; border-radius: 2px; color: #fff; display: inline-block; text-decoration: none; box-shadow: 0 2px 2px 0 rgba(0, 37, 90, .14), 0 3px 1px -2px rgba(0, 37, 90, .2), 0 1px 5px 0 rgba(0, 37, 90, .12);}
