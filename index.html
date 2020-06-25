@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="assets/css/plugins.css">
     <link rel="stylesheet" href="assets/css/style.hce.css">
-
+ <link rel="stylesheet" href="assets/css/styles.css">
 
     <script src="assets/js/jquery.min.js"></script>
     <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>-->
@@ -27,11 +27,50 @@
         <script src="assets/js/html5shiv.min.js"></script>
         <script src="assets/js/respond.min.js"></script>
     <![endif]-->
+	    <script src="assets/js/responsive-nav.js"></script>
 </head>
 
 <body>
     <div class="ms-site-container ms-nav-fixed">
-        <nav class="navbar navbar-expand-md navbar-fixed ms-lead-navbar navbar-mode navbar-mode mb-0" id="navbar-lead">
+	<header>
+	<div class="container container-full">
+      <!-- <a href="#home" class="logo" data-scroll>Fixed Nav</a> -->
+	   <a class="logo" href="about-our-logo.html">
+                        <img src="assets/img/hce-logo.png" width="200px" alt="About our logo">
+                    </a>
+      <nav class="nav-collapse">
+        <ul>
+          <li class="nav-item">
+                        <a data-scroll class="nav-link active" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a data-scroll class="nav-link" href="index.html#analytics">Analytics&nbsp;&amp;<br>Outcomes</a>
+                        </li>
+                        <li class="nav-item">
+                            <a data-scroll class="nav-link" href="index.html#partnerships">Triadic<br>Partnerships</a>
+                        </li>
+                        <li class="nav-item">
+                            <a data-scroll class="nav-link" href="index.html#globalresearch">Global<br>Research</a>
+                        </li>
+                        <li class="nav-item">
+                            <a data-scroll class="nav-link" href="index.html#about">Who<br>We Are</a>
+                        </li>
+                        <li class="nav-item">
+                            <a data-scroll class="nav-link" href="resource.html">Publications</a>
+                        </li>
+                        <li class="nav-item">
+                            <a data-scroll class="nav-link" href="index.html#contact">Contact</a>
+                        </li>
+                        <li class="nav-item">
+                            <a id="link-signin"
+                               href="https://hcesurvey2.com/SurveysApp/bin/wc.dll?hesprocess~UtilitiesLogin"
+                               target="_blank">Sign in</a>
+                        </li>
+        </ul>
+      </nav>
+	  </div>
+    </header>
+        <!-- <nav class="navbar navbar-expand-md navbar-fixed ms-lead-navbar navbar-mode navbar-mode mb-0" id="navbar-lead">
             <div class="container container-full">
                 <div class="navbar-header">
                     <a class="navbar-brand" href="about-our-logo.html">
@@ -68,9 +107,9 @@
                         </li>
                     </ul>
                 </div>
-            </div>
+            </div> -->
             <!-- container -->
-        </nav>
+        <!-- </nav> -->
         <div class="ms-hero-page ms-hero-img-home ms-hero-bg-info color-white" id="home">
             <div class="intro-fixed-content index-1">
                 <div class="container ">
@@ -734,6 +773,9 @@
             });
         });
     </script>
+	<script src="assets/js/fastclick.js"></script>
+    <script src="assets/js/scroll.js"></script>
+    <script src="assets/js/fixed-responsive-nav.js"></script>
 </body>
 
 </html>
